@@ -162,10 +162,12 @@ body {
 }
 .header-content .btn i {
   color: hsla(0, 0%, 100%, 0.6);
-  margin-left: 10px;
+  margin-left: 4px;
+  margin-right: 10px;
 }
 .btn-text {
   color: rgb(2, 2, 2);
+  
 }
 /* Stories*/
 .stories-title {
@@ -195,11 +197,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #e2336b;
+  width: 76px;
+  height: 76px;
+  border:8px solid #0000;
+  border-radius:50px;
+  border-width: var(--gradient);
+  background:
+    linear-gradient(#d902b2ea,#e2336b, #fded15) border-box;
 }
+
 .stories-img img {
   width: 70px;
   height: 70px;
@@ -207,8 +213,8 @@ body {
   border-radius: 50%;
   object-position: center;
 }
-.stories-img .color {
-  border: 2px solid #dbdbdb;
+.stories-img .color{
+  border: 2px solid #f8f8f8;
 }
 .stories-img .add {
   position: absolute;
@@ -220,34 +226,14 @@ body {
   height: 70px;
   border-radius: 50%;
   color: #fff;
-  background: hsla(246, 100%, 67%, 0.7);
+  background: hsla(220, 100%, 67%, 0.6);
 }
-.feed {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
-}
-.feed h1 {
-  font-size: 1.7rem;
-}
-.feed-text {
-  display: flex;
-  align-items: center;
-}
-.feed-text h2 {
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-.feed-text span {
-  font-size: 1rem;
-  margin-top: 1rem;
-  padding-left: 0.5rem;
-}
+
 .main-post {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 11px;
+  margin-top: 30px;
 }
 .post-box {
   width: 300px;
@@ -267,13 +253,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
   border: 2px solid #e2336b;
+  margin-bottom: 6px;
 }
 .post-img img {
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   object-fit: cover;
   border-radius: 50%;
   object-position: center;
